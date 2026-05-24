@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>ŚB Áura</title>
+  <link rel="icon" type="image/jpeg" href="img/Img1.jpeg">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <h1>ŚB Áura</h1>
+    <p>SKINCARE</p>
+  </div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#products">Shop</a>
+    <a href="#about">About</a>
+    <a href="#ingredients">Ingredients</a>
+    <a href="#contact">Contact</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+
+  <div class="nav-actions">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="openCart()">Cart <span id="cartCount">0</span></button>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="img/Img2.jpeg" alt="Glowing Skin" class="hero-bg">
+
+  <div class="hero-text">
+    <span>Clean • Effective • Radiant</span>
+    <h2>Healthy Skin Starts Here.</h2>
+    <p>Science-backed skincare designed to reveal your natural glow.</p>
+    <button onclick="scrollToProducts()">Shop Bestsellers</button>
+
+    <div class="small-product">
+      <img src="img/cream.jpeg" alt="">
+      <img src="img/cream2.jpeg" alt="">
+      <img src="img/Img3.jpeg" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="products-section" id="products">
+  <div class="section-head">
+    <h2>Featured Products</h2>
+
+    <div class="filters">
+      <select id="categoryFilter" aria-label="Filter by category">
+        <option value="All">All</option>
+        <option value="Serum">Serum</option>
+        <option value="Cleanser">Cleanser</option>
+        <option value="Moisturizer">Moisturizer</option>
+      </select>
+
+      <select id="sortFilter" aria-label="Sort products">
+        <option value="featured">Featured</option>
+        <option value="low">Low Price</option>
+        <option value="high">High Price</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="productList" class="product-grid"></div>
+</section>
+
+
+<section class="about" id="about">
+
+  <div class="about-container">
+
+    <div class="about-text">
+      <h2>About ŚB Áura</h2>
+
+      <p>
+        ŚB Áura is a skincare brand focused on clean,
+        effective, and radiant skincare products.
+        Our mission is to help everyone feel confident
+        in their natural beauty.
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img src="img/Best.jpeg" alt="About ŚB Áura">
+      <p>Our Best Seller </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="ingredients" id="ingredients">
+
+  <h2>Our Ingredients</h2>
+
+  <div class="ingredients-container">
+
+    <div class="ingredient-card">
+      <h3>Vitamin C</h3>
+      <p>Helps brighten the skin.</p>
+      <img src="img/In1.jpeg" alt="Vitamin C">
+    </div>
+
+    <div class="ingredient-card">
+      <h3>Hyaluronic Acid</h3>
+      <p>Helps hydrate the skin.</p>
+      <img src="img/In2.jpeg" alt="Hyaluronic Acid">
+    </div>
+
+    <div class="ingredient-card">
+      <h3>Niacinamide</h3>
+      <p>Supports smooth skin texture.</p>
+      <img src="img/In3.jpeg" alt="Niacinamide">
+    </div>
+
+  </div>
+
+</section>
+
+<section class="testimonial">
+  <div class="testimonial-content">
+    <span class="section-tag">With Honor & Trust</span>
+    <h2>Trusted By Experts </h2>
+
+    <div class="testimonial-box">
+      <div class="stars">★★★★★</div>
+
+     
+
+      <p>
+        “Recognized and supported by professionals who believe in authentic skincare, confidence, and premium care.”
+      </p>
+
+      <h4>—  Dr Shahd Mostafa —</h4>
+      <span class="customer-role">Honorary Partner / Professional Supporter</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-container">
+
+    <div class="contact-left">
+      <span class="section-tag">CONTACT</span>
+      <h2>Let’s Talk Beauty</h2>
+      <p>
+        Have questions about skincare, ingredients, or your order?
+        We’d love to hear from you.
+      </p>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="button">Send Message →</button>
+    </form>
+
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <h2>FAQ</h2>
+
+  <div class="faq-box">
+    <h3>Is this a real checkout?</h3>
+    <p>No, this is a demo checkout page for the project.</p>
+  </div>
+
+  <div class="faq-box">
+    <h3>Can I search products?</h3>
+    <p>Yes, you can search and filter products.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-newsletter">
+    <div class="newsletter-images">
+      <img src="img/serum.jpeg" alt="ŚB Áura serum" class="footer-bottle bottle-one">
+      <img src="img/niacinamide.jpeg" alt="ŚB Áura skincare bottle" class="footer-bottle bottle-two">
+      <span class="footer-branch"></span>
+    </div>
+
+    <div class="newsletter-content">
+      <span class="newsletter-label">NEWSLETTER</span>
+      <h2>SUBSCRIBE<br>TO OUR NEWSLETTER</h2>
+
+      <form class="newsletter-form">
+        <label for="newsletterEmail">EMAIL</label>
+
+        <div class="newsletter-input">
+          <input type="email" id="newsletterEmail">
+          <button type="submit">→</button>
+        </div>
+      </form>
+
+      <p>
+        By subscribing to the written newsletter, you agree to the terms of use
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-left">
+      <h2>ŚB ÁURA</h2>
+
+      <div class="footer-tags">
+        <a href="#products">#SKINCARE</a>
+        <a href="#products">#HYDRATING</a>
+        <a href="#products">#PORECLEANING</a>
+        <a href="#products">#BESTSELLERS</a>
+        <a href="#products">#SHOPALL</a>
+        <a href="#about">#ABOUTUS</a>
+        <a href="#contact">#CONTACTS</a>
+        <a href="#products">#OILY</a>
+        <a href="#ingredients">#ESSENTIALCARE</a>
+      </div>
+
+      <div class="footer-links">
+        <a href="#">©2024. ŚB Áura Cosmetics. All Right Reserved</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of use</a>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <div class="social-links">
+        <a href="#">FACEBOOK</a>
+        <a href="#">INSTAGRAM</a>
+      </div>
+
+      <p>
+        THIS PRIM-ROSE AMPOULE IS A TREATMENT FOR<br>
+        A DULL, LOW-ENERGY, TIRED COMPLEXION.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<aside id="cartSidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button onclick="closeCart()">×</button>
+  </div>
+
+  <div id="cartItems"></div>
+
+  <div class="cart-total">
+    <h3>Total: $<span id="cartTotal">0.00</span></h3>
+    <button onclick="goToCheckout()">Proceed to Checkout</button>
+    <p id="paymentMessage"></p>
+  </div>
+</aside>
+
+<div id="overlay" onclick="closeCart()"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

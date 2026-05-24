@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - ŚB Áura</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/jpeg" href="img/Img1.jpeg">
+</head>
+
+<body>
+
+<section class="checkout-page">
+  <div class="checkout-box">
+    <h1>Secure Checkout</h1>
+
+    <form>
+      <h3>Customer Information</h3>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Shipping Address" required>
+
+      <h3>Payment Details</h3>
+      <input type="text" placeholder="Card Number" maxlength="16" required>
+      <input type="text" placeholder="MM / YY" required>
+      <input type="text" placeholder="CVV" maxlength="3" required>
+
+      <button type="button" onclick="confirmPayment()">Pay Now</button>
+      <p id="checkoutMessage"></p>
+    </form>
+
+    <a href="Index.html">← Back to Shop</a>
+  </div>
+</section>
+
+<script>
+function confirmPayment(){
+  document.getElementById("checkoutMessage").innerHTML =
+    "Payment successful! Thank you for shopping with ŚB Áura.";
+
+  localStorage.removeItem("cart");
+}
+</script>
+
+</body>
+</html>
